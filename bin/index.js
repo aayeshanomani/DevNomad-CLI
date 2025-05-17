@@ -1,9 +1,13 @@
-import gradient from "gradient-string";
-import figlet from "figlet";
+#!/usr/bin/env node
+
+import gradient from 'gradient-string';
+import figlet from 'figlet';
 import inquirer from 'inquirer';
-import { handleCommand } from "../lib/commands.js";
+import { handleCommand } from '../lib/commands.js';
 
 console.clear();
+console.log(gradient.rainbow('Welcome to DevNomad CLI! 🚀'));
+
 
 figlet('DevNomad CLI', (err, data) => {
     console.log(gradient.pastel.multiline(data));
